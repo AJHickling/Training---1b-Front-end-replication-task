@@ -1,0 +1,61 @@
+:root {
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --white: white;
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+
+    --red-shadow: hsla(0, 41%, 57%, 0.5);
+    --green-shadow: hsl(154, 59%, 44%);
+
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    /* Reset Defaults */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('$lib/assets/bg-intro-mobile.png');
+    background-color: hsl(0, 100%, 74%);
+}
+
+@media (min-width: 375px) {
+    body {
+        background-image: url('$lib/assets/bg-intro-desktop.png');
+    }
+}
+
+input {
+    font-family: 'Poppins', sans-serif;
+}
+
+:link {
+    text-decoration: none;
+}
+
+a {
+    font-weight: 600;
+    color: var(--red);
+}
+
+strong {
+    font-weight: 600;
+}
+
+.box {
+    border-radius: 0.7rem;
+    box-shadow: 0 8px 0 var(--red-shadow);
+    /* border-bottom: 8px solid var(--grayish-blue); */
+}
+
+.center {
+    text-align: center;
+}
+
+small {
+    font-size: x-small;
+}
